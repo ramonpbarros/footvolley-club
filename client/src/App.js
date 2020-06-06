@@ -13,6 +13,7 @@ import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Homepage from "./pages/Homepage"
 
 function ProtectedRoute({ children, ...rest }) {
   const { isLoggedIn } = useAuth();
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route exact path="/signup">
               <Signup />
+            </Route>
+            <Route exact path="/homepage">
+              <Homepage />
             </Route>
             <ProtectedRoute exact path="/profile">
               <Profile />
