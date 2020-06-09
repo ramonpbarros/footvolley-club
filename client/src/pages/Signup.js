@@ -39,14 +39,26 @@ function Signup() {
   };
 
   return (
-    <div className="container">
-      <h1>Signup</h1>
+    <div
+    className="card col-sm-6 col-lg-5"
+    style={{ height: 460, marginTop: "5em", paddingTop: "1em" }}
+  >
+    <div className=" card-body container">
+      <h1
+        style={{ textAlign: "center", color: "#091b33", fontWeight: "bold" }}
+        className="mb-4"
+      >
+        Welcome
+      </h1>
+      <p style={{ textAlign: "center", color: "gray" }} className="mb-4">
+        In order to sign up, please fill out all the fields below.
+      </p>
       <form onSubmit={handleFormSubmit}>
         <div className="form-group">
-          <label htmlFor="username">Username:</label>
+          {/* <label htmlFor="username">Username:</label> */}
           <input
             className="form-control"
-            placeholder="Username goes here..."
+            placeholder="Username"
             name="username"
             type="text"
             id="username"
@@ -54,10 +66,10 @@ function Signup() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email address:</label>
+          {/* <label htmlFor="email">Email address:</label> */}
           <input
             className="form-control"
-            placeholder="Email goes here..."
+            placeholder="E-mail"
             name="email"
             type="email"
             id="email"
@@ -65,24 +77,30 @@ function Signup() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="pwd">Password:</label>
+          {/* <label htmlFor="pwd">Password:</label> */}
           <input
             className="form-control"
-            placeholder="Password goes here..."
+            placeholder="Password"
             name="password"
             type="password"
             id="pwd"
             onChange={handleChange}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
+        <div className="col text-center">
+          <button type="submit" className="btn btn-custom zoom mb-3 mt-3">
+            Sign Up
+          </button>
+        </div>
       </form>
-      <p>
-        <Link to="/login">Go to Login</Link>
+      <p style={{ textAlign: "center" }}>
+        <span style={{ color: "gray" }}>Already have an account? </span>
+        <Link to="/login" style={{ color: "grey", fontWeight: "bold" }}>
+          Login
+        </Link>
       </p>
     </div>
+  </div>
   );
 }
 
