@@ -49,7 +49,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand navbar-dark custom-background">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/homepage">
           Global Games California
         </Link>
         <NavLinks />
