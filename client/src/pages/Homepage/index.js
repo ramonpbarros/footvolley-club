@@ -15,39 +15,39 @@ function Homepage() {
         autoPlay={true}
         fadeOutAnimation={true}
       >
-        <div className="col text-center">
+        <div className="text-center">
           <img
             src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
             onDragStart={handleOnDragStart}
             className="img-carousel"
           />
         </div>
-        <div className="col text-center">
+        <div className="text-center">
           <img
             src="https://images.unsplash.com/photo-1562552052-c72ceddf93dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
             onDragStart={handleOnDragStart}
-            className="yours-custom-class"
+            className="img-carousel"
           />
         </div>
-        <div className="col text-center">
+        <div className="text-center">
           <img
             src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
             onDragStart={handleOnDragStart}
-            className="yours-custom-class"
+            className="img-carousel"
           />
         </div>
-        <div className="col text-center">
+        <div className="text-center">
           <img
-            src="/img4"
+            src="https://images.unsplash.com/photo-1562552052-c72ceddf93dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
             onDragStart={handleOnDragStart}
-            className="yours-custom-class"
+            className="img-carousel"
           />
         </div>
-        <div className="col text-center">
+        <div className="text-center">
           <img
-            src="/img5"
+            src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
             onDragStart={handleOnDragStart}
-            className="yours-custom-class"
+            className="img-carousel"
           />
         </div>
       </AliceCarousel>
@@ -89,6 +89,25 @@ function Homepage() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="container col text-center mt-5 mb-3">
+        <h1 style={{ color: "orange", fontWeight: "bold" }}>
+          SOCIAL RESPONSABILITY
+        </h1>
+        <p className="mt-4 mb-4">
+          Lorem ipsum, or lipsum as it is sometimes known
+        </p>
+        <p className="container mb-5" style={{ width: "60%" }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <Link className="btn btn-custom-two zoom" to="/about">Button</Link>
       </div>
     </React.Fragment>
   );

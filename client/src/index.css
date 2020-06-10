@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #091b33;
+  background-color: white;
 }
 
 .btn-custom {
@@ -14,6 +14,21 @@ body {
 }
 
 .btn-custom:hover {
+  color: white;
+  box-shadow: 1px 1px 1px rgb(30, 30, 30);
+  -moz-box-shadow: 1px 1px 1px rgb(30, 30, 30);
+  -webkit-box-shadow: 1px 1px 1px rgb(30, 30, 30);
+  -khtml-box-shadow: 1px 1px 1px rgb(30, 30, 30) 30;
+}
+.btn-custom-two {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  width: 10em;
+  text-align: center;
+}
+
+.btn-custom-two:hover {
   color: white;
   box-shadow: 1px 1px 1px rgb(30, 30, 30);
   -moz-box-shadow: 1px 1px 1px rgb(30, 30, 30);

@@ -14,6 +14,13 @@ import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage"
+import Contact from "./pages/Contact"
+import Perks from "./pages/Perks"
+import Plans from "./pages/Plans"
+import About from "./pages/About"
+import Customer from "./pages/Customer"
+import Shop from "./pages/Shop"
+import Classes from "./pages/Classes"
 
 function ProtectedRoute({ children, ...rest }) {
   const { isLoggedIn } = useAuth();
@@ -31,7 +38,7 @@ function App() {
           <Navbar />
           <Switch>
             <ProtectedRoute exact path="/">
-              <Home />
+              <Homepage />
             </ProtectedRoute>
             <Route exact path="/login">
               <Login />
@@ -42,8 +49,32 @@ function App() {
             <Route exact path="/homepage">
               <Homepage />
             </Route>
+            <ProtectedRoute exact path="/home">
+              <Home />
+            </ProtectedRoute>
             <ProtectedRoute exact path="/profile">
               <Profile />
+            </ProtectedRoute>
+            <ProtectedRoute exact path="/contact">
+              <Contact />
+            </ProtectedRoute>
+            <ProtectedRoute exact path="/perks">
+              <Perks />
+            </ProtectedRoute>
+            <ProtectedRoute exact path="/plans">
+              <Plans />
+            </ProtectedRoute>
+            <ProtectedRoute exact path="/about">
+              <About />
+            </ProtectedRoute>
+            <ProtectedRoute exact path="/customer-care">
+              <Customer />
+            </ProtectedRoute>
+            <ProtectedRoute exact path="/shop">
+              <Shop />
+            </ProtectedRoute>
+            <ProtectedRoute exact path="/classes">
+              <Classes />
             </ProtectedRoute>
           </Switch>
         </div>
