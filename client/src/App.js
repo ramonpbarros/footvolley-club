@@ -18,7 +18,6 @@ import Contact from "./pages/Contact"
 import Perks from "./pages/Perks"
 import Plans from "./pages/Plans"
 import About from "./pages/About"
-import Customer from "./pages/Customer"
 import Shop from "./pages/Shop"
 import Classes from "./pages/Classes"
 
@@ -49,33 +48,30 @@ function App() {
             <Route exact path="/homepage">
               <Homepage />
             </Route>
-            <ProtectedRoute exact path="/home">
-              <Home />
-            </ProtectedRoute>
+            <Route exact path="/home">
+            <Homepage />
+            </Route>
             <ProtectedRoute exact path="/profile">
               <Profile />
             </ProtectedRoute>
-            <ProtectedRoute exact path="/contact">
+            <Route exact path="/contact">
               <Contact />
-            </ProtectedRoute>
+            </Route>
             <ProtectedRoute exact path="/perks">
               <Perks />
             </ProtectedRoute>
-            <ProtectedRoute exact path="/plans">
+            <Route exact path="/plans">
               <Plans />
-            </ProtectedRoute>
-            <ProtectedRoute exact path="/about">
+            </Route>
+            <Route exact path="/about">
               <About />
-            </ProtectedRoute>
-            <ProtectedRoute exact path="/customer-care">
-              <Customer />
-            </ProtectedRoute>
-            <ProtectedRoute exact path="/shop">
+            </Route>
+            <Route exact path="/shop">
               <Shop />
-            </ProtectedRoute>
-            <ProtectedRoute exact path="/classes">
+            </Route>
+            <Route exact path="/classes">
               <Classes />
-            </ProtectedRoute>
+            </Route>
           </Switch>
         </div>
       </Router>

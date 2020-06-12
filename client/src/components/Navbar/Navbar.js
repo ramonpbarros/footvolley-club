@@ -29,15 +29,20 @@ function NavLinks() {
   const links = [];
   if (isLoggedIn) {
     links.push({ text: "Home", to: "/home" });
-    links.push({ text: "Sports Leagues and CLasses", to: "/classes" });
-    links.push({ text: "Shop", to: "/shop" });
     links.push({ text: "About", to: "/about" });
-    links.push({ text: "Customer Care", to: "/customer-care" });
-    links.push({ text: "Contact", to: "/contact" });
+    links.push({ text: "Sports Leagues and CLasses", to: "/classes" });
     links.push({ text: "Plans and Pricing", to: "/plans" });
+    links.push({ text: "Shop", to: "/shop" });
     links.push({ text: "Perks", to: "/perks" });
+    links.push({ text: "My Account", to: "/profile" });
     links.push({ text: "Logout", onClick: () => logout() });
   } else {
+    links.push({ text: "Home", to: "/home" });
+    links.push({ text: "About", to: "/about" });
+    links.push({ text: "Sports Leagues and CLasses", to: "/classes" });
+    links.push({ text: "Plans and Pricing", to: "/plans" });
+    links.push({ text: "Shop", to: "/shop" });
+    links.push({ text: "Perks", to: "/perks" });
     links.push({ text: "Signup", to: "/signup" });
     links.push({ text: "Login", to: "/login" });
   }

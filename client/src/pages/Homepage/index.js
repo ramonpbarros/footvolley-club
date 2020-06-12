@@ -11,7 +11,7 @@ function Homepage() {
       <AliceCarousel
         mouseTrackingEnabled
         autoPlayInterval={3000}
-        autoPlayDirection="rtl"
+        autoPlayDirection="ltr"
         autoPlay={true}
         fadeOutAnimation={true}
       >
